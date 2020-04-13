@@ -2,11 +2,36 @@
     <title>Riccardo</title>
     <style>
         body{
-            max-width:654px;
+            max-width:888px; 
             background-color: black;
             color: white;
             margin: auto;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #line2{
+            display: flex;
+            margin: 22px; 
+            justify-content: space-between;
+        }
+        #line2 .frame{
+            border: 12px solid white; 
+            border-radius: 20px; 
+            background-color: grey;
+            padding: 0px; 
+            text-align: center;
+        }
+        #line2 .frame p{
+            text-align: center;
+        }
+        #line2 .txtframe{
+            border: 12px solid white; 
+            border-radius: 20px; 
+            background-color: grey;
+            padding: 10px; 
+        }
+        #line3 {
+          display: flex;
+          justify-content: space-between;
         }
     </style>
 </head>
@@ -15,52 +40,102 @@
     <hr>
     <h2>Homework: Create your first HTML page</h2>
 
-<p>If truth be told, my first HTML page dates back to 2009. What happened is: I found a website with interesting information, but a few annoying grammar mistakes. I saved the page on my computer (Ctrl + S on Firefox), and I fixed the mistakes.</p>
+    <p>If truth be told, my first HTML page dates back to 2009. </p>
 
-<p>In the 11 years since then, I learned HTML simply by retro-enginnering webpages. Up to date, I always used the simple Notepad to write and/or edit HTML files.</p>
+    <p style="display: none;">The story is: I found a website with interesting information, but a few annoying grammar mistakes. I saved the page on my computer (Ctrl + S on Firefox), and I fixed the mistakes. In the 11 years since then, I learned HTML simply by retro-enginnering webpages. Up to date, I always used the simple Notepad to write and/or edit HTML files.</p>
 
-<p>Looking forward for CCS and JavaScript :)</p>
+    <p>Now I am happy to learn CSS and JavaScript :)</p>
+
+    <hr>
+    <h2>Personal information</h2>
+    <div id="line2">
+        <div class="frame">
+            <img src="Riccardo.jpg" height="226px" alt="My face">
+        </div>
+        <div class="txtframe">
+            <ul>
+                <li><b>E-mail:</b> Riccardo.________@yahoo.it</li>
+                <li><b>Phone:</b> +xx-06-36-81-xx-xx</li>
+                <li><b>Social networks:</b> Facebook, LinkedIn, Kaggle.</li>
+                <li><b>Wikis:</b> Strategywiki (admin.), Wikipedia, Fandom (contrib.)</li>
+            </ul>
+        </div>
+    </div>
 
 <hr>
-<div style="margin: 22px; border: 12px blue; padding: 12px; background-color: grey;">
-    <img src="Riccardo.jpg" height="226px" alt="My face">
+<div id="line3">
+    <div>
+<!--    <div style="flex-grow: 2;">-->
+        <h3>Technical skills</h3>
+        <ul>
+            <li> Degree and Master in Physics <br> (specialized in astrophysics)</li>
+        </ul>
+        <p>Computer skills (coding):</p>
+        <ul>
+            <li> <i>(Turbo Pascal, Fortran77)</i></li>
+            <li> C</li>
+            <li> Python</li>
+            <li> SQL</li>
+            <li> HTML</li>
+        </ul>
+        <p>Computer skills (docs):</p>
+        <ul>
+            <li> OpenOffice & LibreOffice</li>
+            <li> LaTeX</li>
+            <li> MatLab</li>
+        </ul>
+        <p>Languages:</p>
+        <ol>
+            <li> English</li>
+            <li> Italian</li>
+            <li> French</li>
+            <li> Spanish</li>
+        </ol>
+    </div>
+    <div>
+        <h3>Soft skills</h3>
+        <ul>
+            <li> Team spirit </li>
+            <li> Propositive thinking </li>
+            <li> Respect of procedures </li>
+            <li> High precision </li>
+            <li> Efficacity over aesthetics </li>
+        </ul>
+    </div>
+    <div style="max-width: 40%;">
+        <h3>Hobbies</h3>
+        <ol>
+            <li><font color="blue"><b> Reading books:</b></font><br/> Oh, the pleasure of the languages! Oh, the nice smell of paper!</li>
+            <li><font color="blue"><b> Very old role-playing video games:</b></font><br/> ...at least 18 years old. I am administrator on <a href="https://strategywiki.org">StrategyWiki</a>.</li>
+            <li><font color="blue"><b> Snowboarding:</b></font><br/> A good reason to do sport once a year and nothing more :P</li>
+            <!--  <li><font color="blue"><b> :</b></font> </li>-->
+        </ol>
+        <h3>Other things I like</h3>
+        <ol>
+            <li><font color="blue"><b> Dark mode:</b></font><br/> looking into a mostly white screen all day long is the same as looking straight into a light bulb. I <i><b>protect my eyes</b></i> with dark mode.</li>
+            <li><font color="blue"><b> Keyboard shortcuts:</b></font><br/> I used to say to my students in high school: <i>"The mouse is for the cats, professionals use keyboard shortcuts"</i>.</li>
+            <li><font color="blue"><b> Mozilla Firefox:</b></font><br/> whenever I save a webpage, Firefox saves the editable HTML in a file and all the images in a folder. I find this extremely nice for two reasons: if I want to edit the page (with the humble Notepad) and if I want to save all the images in the blink of an eye. <br/>I <font color="blue"><b>dislike</b></font> Google Chrome for many reasons (unless it was updated recently): if I save a webpage, Chrome creates a single HTML file and I am unable to separate the images; some useful keyboard shortcuts do not work on Chrome; if installed on a computer, Chrome keeps forcing itself to become the default browser; Chrome makes me feel tracked (I have nothing to hide, but I value my privacy).</li>
+            <!--  <li><font color="blue"><b> :</b></font> </li>-->
+        </ol>
+    </div>
 </div>
 
-<h2>Personal information</h2>
-<ul>
-    <li><b>E-mail:</b> Riccardo.________@yahoo.it</li>
-    <li><b>Phone:</b> +xx-06-36-81-xx-xx</li>
-    <li><b>Social networks:</b> Facebook, LinkedIn, Kaggle.</li>
-    <li><b>Wikis:</b> Strategywiki (administrator), Wikipedia, Fandom (contributor)</li>
-</ul>
-<hr>
-<h2>What I like</h2>
-<ol>
-  <li><font color="blue"><b> Dark mode:</b></font> looking into a mostly white screen all day long is the same as looking straight into a light bulb. I <i><b>protect my eyes</b></i> with dark mode.</li>
-  <li><font color="blue"><b> Keyboard shortcuts:</b></font> I used to say to my students in high school: <i>"The mouse is for the cats, professionals use keyboard shortcuts"</i>.</li>
-  <li><font color="blue"><b> Mozilla Firefox:</b></font> whenever I save a webpage, Firefox saves the editable HTML in a file and all the images in a folder. I find this extremely nice for two reasons: if I want to edit the page (with the humble Notepad) and if I want to save all the images in the blink of an eye. I <font color="blue"><b>dislike</b></font> Google Chrome for many reasons (unless it was updated recently): if I save a webpage, Chrome creates a single HTML file and I am unable to separate the images; some useful keyboard shortcuts do not work on Chrome; if installed on a computer, Chrome keeps forcing itself to become the default browser; Chrome makes me feel tracked (I have nothing to hide, but I value my privacy).</li>
-  <li><font color="blue"><b> Very old role-playing video games:</b></font> at least 18 years old. I am administrator on <a href="https://strategywiki.org">StrategyWiki</a>.</li>
-  <li><font color="blue"><b> Books:</b></font> oh, the pleasure of the languages! Oh, the nice smell of paper!</li>
-  <li><font color="blue"><b> Snowboarding:</b></font> a good reason to do sport once a year and nothing more :P</li>
-<!--  <li><font color="blue"><b> :</b></font> </li>-->
-</ol>
 
+<hr>
+<div id="line2">
+    <div class="frame">
+        <img src="Phalsberg title.png" height="226px" alt="My current quest">
+        <p>I like old role-playing video games. <br>This one is from 1986.</p>
+    </div>
+    <div class="frame">
+        <img src="L-Incroyable-histoire-de-la-litterature-francaise.jpg" height="226px" alt="A very good read!">
+        <p>I love reading books. <br>   Recently, I really enjoyed this one.   </p>
+    </div>
+</div>
 <br>
 <form>
     <input type="text" placeholder="Write your opinion here.">
     <input type="submit" placeholder="Send it.">
 </form>
-
-<br>
-<table><tbody align="center">
-    <tr>
-        <td> <img src="Phalsberg title.png" height="226px" alt="My current quest"></td>
-        <td> <img src="L-Incroyable-histoire-de-la-litterature-francaise.jpg" height="226px" alt="A very good read!"></td>
-    </tr><tr>
-        <td> I like old role-playing video games. <br>This one is from 1986. </td>
-        <td> I love reading books. <br>Recently, I really enjoyed this one. </td>
-    </tr>
-</tbody></table>
-
-<hr><br><br><br>
+    <hr><br><br>
 </body></html>
